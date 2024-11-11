@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+}
+
+header {
+    text-align: left;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #e7e1e1;
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.apresentacao, .historico, .cursos {
+    margin: 8px 0;
+    padding: 20px;
+}
+
+.apresentacao h1 {
+    background-color: #2F4F4F;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.historico p {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 5px solid #8bc34a;
+    padding-bottom: 1px;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #2F4F4F;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 5px solid #8bc34a;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center; 
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .logo {
+        max-width: 450px;
+    }
+
+    
+    .footer-container {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    .image-container img {
+        max-width: 750px;
+    }
+}
